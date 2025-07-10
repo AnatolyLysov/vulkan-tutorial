@@ -1,0 +1,47 @@
+[main] Configuring project: vulkan-tutorial 
+[proc] Executing command: /usr/bin/cmake -DCMAKE_BUILD_TYPE:STRING=Debug -DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE -DCMAKE_C_COMPILER:FILEPATH=/mnt/c/msys64/ucrt64/bin/gcc.exe -DCMAKE_CXX_COMPILER:FILEPATH=/mnt/c/msys64/ucrt64/bin/g++.exe --no-warn-unused-cli -S /home/aikidance/vulkan-tutorial -B /home/aikidance/vulkan-tutorial/build -G "Unix Makefiles" --debugger --debugger-pipe /tmp/cmake-debugger-pipe-8eb2ecd4-6860-4b16-8322-bdd7e8cbcc9c
+[cmake] Not searching for unused variables given on the command line.
+[cmake] Running with debugger on.
+[cmake] Waiting for debugger client to connect...
+[debugger] Connecting debugger on named pipe: "/tmp/cmake-debugger-pipe-8eb2ecd4-6860-4b16-8322-bdd7e8cbcc9c"
+[cmake] Debugger client connected.
+[cmake] [CMake Debugger] DAP session error: No request handler registered for command 'source'
+[cmake] -- The C compiler identification is unknown
+[cmake] -- The CXX compiler identification is unknown
+[cmake] -- Detecting C compiler ABI info
+[cmake] -- Detecting C compiler ABI info - failed
+[cmake] -- Check for working C compiler: /mnt/c/msys64/ucrt64/bin/gcc.exe
+[cmake] -- Check for working C compiler: /mnt/c/msys64/ucrt64/bin/gcc.exe - broken
+[cmake] CMake Error at /usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:67 (message):
+[cmake]   The C compiler
+[cmake] 
+[cmake]     "/mnt/c/msys64/ucrt64/bin/gcc.exe"
+[cmake] 
+[cmake]   is not able to compile a simple test program.
+[cmake] 
+[cmake]   It fails with the following output:
+[cmake] 
+[cmake]     Change Dir: '/home/aikidance/vulkan-tutorial/build/CMakeFiles/CMakeScratch/TryCompile-yBW8gL'
+[cmake]     
+[cmake]     Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f5e29/fast
+[cmake]     /usr/bin/gmake  -f CMakeFiles/cmTC_f5e29.dir/build.make CMakeFiles/cmTC_f5e29.dir/build
+[cmake]     gmake[1]: Entering directory '/home/aikidance/vulkan-tutorial/build/CMakeFiles/CMakeScratch/TryCompile-yBW8gL'
+[cmake]     Building C object CMakeFiles/cmTC_f5e29.dir/testCCompiler.c.o
+[cmake]     /mnt/c/msys64/ucrt64/bin/gcc.exe    -o CMakeFiles/cmTC_f5e29.dir/testCCompiler.c.o -c /home/aikidance/vulkan-tutorial/build/CMakeFiles/CMakeScratch/TryCompile-yBW8gL/testCCompiler.c
+[cmake]     gcc.exe: fatal error: cannot execute 'cc1': CreateProcess: No such file or directory
+[cmake]     compilation terminated.
+[cmake]     gmake[1]: *** [CMakeFiles/cmTC_f5e29.dir/build.make:78: CMakeFiles/cmTC_f5e29.dir/testCCompiler.c.o] Error 1
+[cmake]     gmake[1]: Leaving directory '/home/aikidance/vulkan-tutorial/build/CMakeFiles/CMakeScratch/TryCompile-yBW8gL'
+[cmake]     gmake: *** [Makefile:127: cmTC_f5e29/fast] Error 2
+[cmake]     
+[cmake]     
+[cmake] 
+[cmake]   
+[cmake] 
+[cmake]   CMake will not be able to correctly generate this project.
+[cmake] Call Stack (most recent call first):
+[cmake]   CMakeLists.txt:4 (project)
+[cmake] 
+[cmake] 
+[cmake] -- Configuring incomplete, errors occurred!
+[proc] The command: /usr/bin/cmake -DCMAKE_BUILD_TYPE:STRING=Debug -DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE -DCMAKE_C_COMPILER:FILEPATH=/mnt/c/msys64/ucrt64/bin/gcc.exe -DCMAKE_CXX_COMPILER:FILEPATH=/mnt/c/msys64/ucrt64/bin/g++.exe --no-warn-unused-cli -S /home/aikidance/vulkan-tutorial -B /home/aikidance/vulkan-tutorial/build -G "Unix Makefiles" --debugger --debugger-pipe /tmp/cmake-debugger-pipe-8eb2ecd4-6860-4b16-8322-bdd7e8cbcc9c exited with code: 1
